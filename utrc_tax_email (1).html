@@ -47,7 +47,7 @@
     font-size: 18px;
     margin-top: 0;
   }
-  .cta-button {
+  .cta-button, .whatsapp-button {
     display: inline-block;
     background-color: #002147;
     color: white;
@@ -57,7 +57,7 @@
     font-weight: 600;
     margin-top: 20px;
   }
-  .cta-button:hover {
+  .cta-button:hover, .whatsapp-button:hover {
     background-color: #004080;
   }
   .footer {
@@ -66,6 +66,23 @@
     text-align: center;
     font-size: 12px;
     color: #666666;
+  }
+  /* AI Chat Popup */
+  .chat-popup {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #002147;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .chat-popup:hover {
+    background-color: #004080;
   }
   @media screen and (max-width: 600px) {
     .content {
@@ -119,7 +136,8 @@
       🌐 <a href="http://www.ultimatetaxrelief.com" target="_blank">www.ultimatetaxrelief.com</a></p>
 
       <a href="mailto:info.shanyiseelan@gmail.com" class="cta-button">Schedule a Meeting</a>
-      <p class="note">Mail Subject: <strong>TAX Business Consulting - UTRC Inquiry</strong><br />
+      <a href="https://wa.me/2348101899455?text=Hello%20UTRC%2C%20I%27d%20like%20to%20discuss%20my%20tax%20compliance" class="whatsapp-button">Chat on WhatsApp</a>
+<p class="note">Mail Subject: <strong>TAX Business Consulting - UTRC Inquiry</strong><br />
       Kindly start your email subject line with <strong>TAXBA UTRC</strong> it ensures your message receives priority attention.</p>
 
       <p><strong>Our Offices Locations:</strong><br />
@@ -131,6 +149,9 @@
       <p>&copy; 2025 Ultimate Tax Relief Consulting (UTRC). All rights reserved.<br />
       Professional Tax Compliance, Business Growth & Strategic Advisory Services</p>
     </div>
+  </div>
+  <div class="chat-popup" onclick="alert('Hi! I\'m your virtual UTRC assistant. How can I help with your tax inquiry today?')">
+    💬 Chat with UTRC AI Assistant
   </div>
 </body>
 </html>
